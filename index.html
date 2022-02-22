@@ -17,7 +17,7 @@
             Marvel Comics. Został stworzony przez Stana Lee, Jacka Kirby'ego i
             Larry'ego Liebera.
           </p>
-          <button>Zobacz przemianę!</button>
+          <button name="thor" onclick="changeImg()">Zobacz przemianę!</button>
         </div>
       </div>
       <div class="screen">
@@ -29,7 +29,9 @@
             publikacjach. Jego twórcami są scenarzyści Stan Lee, Larry Lieber,
             oraz rysownicy Don Heck i Jack Kirby.
           </p>
-          <button>Zobacz przemianę!</button>
+          <button name="ironMan" onclick="changeImg()">
+            Zobacz przemianę!
+          </button>
         </div>
       </div>
       <div class="screen">
@@ -41,9 +43,17 @@
             bazujących na komiksowych publikacjach. Twórcami postaci byli Jack
             Kirby i Joe Simon.
           </p>
-          <button>Zobacz przemianę!</button>
+          <button name="captain" onclick="changeImg()">
+            Zobacz przemianę!
+          </button>
         </div>
       </div>
     </section>
   </body>
+  <script>
+    let section = document.querySelector(".split");
+    const changeImg = () => {
+      section.classList.toggle("endgame");
+    };
+  </script>
 </html>
