@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Slab", serif;
+}
+
+section {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  background-color: #000;
+}
+
+section .screen {
+  position: relative;
+  flex-grow: 2;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  overflow: hidden;
+  padding: 20px;
+  transition: 1s;
+}
+
+section:hover .screen {
+  opacity: 0.2;
+}
+
+section .screen:hover {
+  flex-grow: 5;
+  opacity: 1;
+}
+
+section .screen:nth-child(1) {
+  background: url("./images/Thor.jpg");
+  background-position: 70%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+section .screen:nth-child(2) {
+  background: url("./images/IronMan.jpg");
+  background-position: 60%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+section .screen:nth-child(3) {
+  background: url("./images/captain.jpg");
+  background-position: 80%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+section .screen .content {
+  position: absolute;
+  width: 50%;
+  height: 25vh;
+  background: #fafafa;
+  padding: 30px;
+  text-align: justify;
+  border-radius: 10px;
+  box-shadow: 5px 8px 5px #000;
+  transform: translateX(150%);
+  transition: 0.75s;
+}
+
+section .screen:hover .content {
+  transform: translateX(0);
+  transition-delay: 0.5s;
+}
+
+section .screen .content h1 {
+  font-size: 32px;
+  text-transform: uppercase;
+  color: #ed363a;
+}
